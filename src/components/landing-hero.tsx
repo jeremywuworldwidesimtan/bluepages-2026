@@ -3,7 +3,7 @@ export default function LandingHero() {
     <div className="relative w-auto bg-bp-sky-500 p-4 xl:max-w-[60vw] xl:mx-auto overflow-hidden">
       <picture className="pointer-events-none absolute inset-0 flex items-center justify-center">
         <img
-          src="/public/blue.png"
+          src={`${import.meta.env.BASE_URL}blue.png`}
           alt="Photo of Blue"
           className="p-6 lg:max-h-[70vh]"
         />
