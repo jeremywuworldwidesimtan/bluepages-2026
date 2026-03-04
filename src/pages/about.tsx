@@ -26,20 +26,20 @@ import { TbBrandCSharp, TbBrandOpenai } from "react-icons/tb";
 const iconSize = 32;
 
 const skills = [
-  { name: "javascript", value: 90, icon: <SiJavascript size={iconSize} /> },
-  { name: "typescript", value: 85, icon: <SiTypescript size={iconSize} /> },
-  { name: "react", value: 83, icon: <SiReact size={iconSize} /> },
-  { name: "python", value: 80, icon: <SiPython size={iconSize} /> },
-  { name: "react router", value: 77, icon: <SiReactrouter size={iconSize} /> },
-  { name: "tailwind css", value: 75, icon: <SiTailwindcss size={iconSize} /> },
-  { name: "shadcn ui", value: 70, icon: <SiShadcnui size={iconSize} /> },
-  { name: "node.js", value: 67, icon: <SiNodedotjs size={iconSize} /> },
-  { name: "vite", value: 65, icon: <SiVite size={iconSize} /> },
-  { name: "d3", value: 63, icon: <SiD3 size={iconSize} /> },
-  { name: "sql", value: 60, icon: <SiPostgresql size={iconSize} /> },
-  { name: "c#", value: 55, icon: <TbBrandCSharp size={iconSize} /> },
-  { name: "ai", value: 53, icon: <TbBrandOpenai size={iconSize} /> },
-  { name: "next.js", value: 50, icon: <SiNextdotjs size={iconSize} /> },
+  { id: "js", name: "javascript", value: 90, icon: <SiJavascript size={iconSize} /> },
+  { id: "ts", name: "typescript", value: 85, icon: <SiTypescript size={iconSize} /> },
+  { id: "rct", name: "react", value: 83, icon: <SiReact size={iconSize} /> },
+  { id: "py", name: "python", value: 80, icon: <SiPython size={iconSize} /> },
+  { id: "rr", name: "react router", value: 77, icon: <SiReactrouter size={iconSize} /> },
+  { id: "twc", name: "tailwind css", value: 75, icon: <SiTailwindcss size={iconSize} /> },
+  { id: "sh", name: "shadcn ui", value: 70, icon: <SiShadcnui size={iconSize} /> },
+  { id: "ndj", name: "node.js", value: 67, icon: <SiNodedotjs size={iconSize} /> },
+  { id: "vt", name: "vite", value: 65, icon: <SiVite size={iconSize} /> },
+  { id: "d3", name: "d3", value: 63, icon: <SiD3 size={iconSize} /> },
+  { id: "sq", name: "sql", value: 60, icon: <SiPostgresql size={iconSize} /> },
+  { id: "cs", name: "c#", value: 55, icon: <TbBrandCSharp size={iconSize} /> },
+  { id: "ai", name: "ai", value: 53, icon: <TbBrandOpenai size={iconSize} /> },
+  { id: "nxj", name: "next.js", value: 50, icon: <SiNextdotjs size={iconSize} /> },
 ];
 
 export default function About() {
@@ -134,28 +134,25 @@ export default function About() {
         <div>
           <h2 className="text-xl font-bold text-bp-ink-950">skills</h2>
           <div className="flex flex-col gap-4 mt-4">
-            {skills.map((skill) => (
+            {(skills).map((skill) => (
               <div key={skill.name} className="flex items-center gap-2">
                 {skill.icon && <span>{skill.icon}</span>}
                 <Field className="w-full max-w-sm" key={skill.name}>
-                  <FieldLabel htmlFor={skill.name.toLowerCase()}>
+                  <FieldLabel htmlFor={skill.id}>
                     <span>{skill.name}</span>
                     <span className="ml-auto">{skill.value}/100</span>
                   </FieldLabel>
                   <Progress
                     value={skill.value}
-                    id={skill.name.toLowerCase()}
+                    id={skill.id}
                     className="bg-bp-horizon-200"
                   />
                 </Field>
               </div>
             ))}
-            <Collapsible>
+            <Collapsible onOpenChange={setAlanMessageOpen}>
               <CollapsibleTrigger
-                className="font-xs flex items-center gap-1 text-bp-ink-950"
-                onClick={() => {
-                  setAlanMessageOpen(!alanMessageOpen);
-                }}
+                className="text-xs flex items-center gap-1 text-bp-ink-950"
               >
                 A message from Alan{" "}
                 {!alanMessageOpen ? (

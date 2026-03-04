@@ -9,24 +9,24 @@ export default function Header() {
   return (
     <>
       <div className="flex justify-between items-center px-4 py-6 sticky top-0 z-50 backdrop-blur-md bg-bp-sky-500/80">
-        <h1 id="bluepages_logo" className="text-4xl md:text-7xl lg:text:7xl text-bp-horizon-200 font-bold transition duration-200 ease-in-out hover:text-bp-ink-950"><a href={`${import.meta.env.BASE_URL}`}>bluepages</a></h1>
+        <h1 id="bluepages_logo" className="text-4xl md:text-7xl text-bp-horizon-200 font-bold transition duration-200 ease-in-out hover:text-bp-ink-950"><a href={`${import.meta.env.BASE_URL}`}>bluepages</a></h1>
         <nav className="hidden lg:block">
           {/* get current page and bold the appropriate link */}
           <ul className="flex gap-4 text-xl text-bp-ink-950">
             <li>
-              <Link to="">home</Link>
+              <Link to="/">home</Link>
             </li>
             <li>
-              <Link to="">blog</Link>
+              <Link to="/">blog</Link>
             </li>
             <li>
-              <Link to="">projects</Link>
+              <Link to="/">projects</Link>
             </li>
             <li>
-              <Link to={`/about`}>about</Link>
+              <Link to="/about">about</Link>
             </li>
             <li>
-              <Link to="">contact</Link>
+              <Link to="/">contact</Link>
             </li>
           </ul>
         </nav>
