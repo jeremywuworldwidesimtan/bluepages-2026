@@ -1,0 +1,44 @@
+{
+  "title": "projects",
+  "subtitle": "all projects comes with source code and live demo ;)",
+  "contents": [
+    {
+      "imageSrc": "https://gbti.network/wp-content/uploads/2025/08/image-11.png",
+      "imageAlt": "React SME Project",
+      "imageTitle": "React SME Project",
+      "title": "React Small Business Page",
+      "description": "A simple template for a feature-complete small business page. An abridged version of a client project.",
+      "badges": ["React", "Frontend", "Landing Page"],
+      "link": "/"
+    },
+    {
+      "imageSrc": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1632205229741%2F3Uii92UUN.png",
+      "imageAlt": "React Dashboard",
+      "imageTitle": "React Dashboard",
+      "title": "React Dashbaord Project",
+      "description": "A dashboard for internal tools in companies.",
+      "badges": ["React", "Frontend", "Dashboard"],
+      "link": "/"
+    },
+    {
+      "imageSrc": "https://uicookies.com/wp-content/uploads/2020/01/react-website-templates-1000x750.jpg",
+      "imageAlt": "React Vacation Site",
+      "imageTitle": "React Vacation Site",
+      "title": "React Vacation Site",
+      "description": "A dynamic vacation site built with React with RESTFul API and DB integrations",
+      "badges": ["React", "Frontend", "Landing Page"],
+      "link": "/"
+    },
+    {
+      "imageSrc": "https://tailkits.com/_ipx/_/react-chat-template.png",
+      "imageAlt": "React Chat App",
+      "imageTitle": "React Chat App",
+      "title": "React WhatsApp Clone",
+      "description": "Experimenting with realtime interactions.",
+      "badges": ["React", "Frontend", "Experiments"],
+      "link": "/",
+      "author": "Blue",
+      "publishedDate": "2026-02-24 23:10"
+    }
+  ]
+}
