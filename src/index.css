@@ -125,19 +125,20 @@ nav a::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px; /* Underline thickness */
+  height: 2px; 
   bottom: 0;
   left: 0;
-  background-color: #000; /* Underline color */
-  transform: scaleX(0); /* Initially hide the line */
-  transform-origin: bottom right; /* Animation starts from the right */
-  transition: transform 0.1s ease-out; /* Smooth transition effect */
+  background-color: #000; 
+  transform: scaleX(0); 
+  transform-origin: bottom right; 
+  transition: transform 0.1s ease-out; 
 }
 
 nav a:hover::after {
-  transform: scaleX(1); /* Expand the line to full width on hover */
-  transform-origin: bottom left; /* Animation finishes at the left */
+  transform: scaleX(1); 
+  transform-origin: bottom left; 
 }
+
 
 a:visited {
   color: inherit;
