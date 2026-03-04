@@ -10,7 +10,7 @@ bluepages is the personal blog+portfolio page of emily, a junior freelance front
 
 ## features
 - cool landing hero
-- translucent header 
+- translucent tinted header 
 - responsive web design
 - an epic javascript object for personal details
 - carousel powered by shadcn/ui, populated using json files
