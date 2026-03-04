@@ -6,11 +6,13 @@ bluepages is the personal blog+portfolio page of emily, a junior freelance front
 
 [now with live demo!](https://jeremywuworldwidesimtan.github.io/bluepages-2026/)
 
+**this is just a static template demo - the email signups won't work and all content on the blog and project pages are pre-populated**
+
 ![bluepages screenshot](screenshot.png)
 
 ## features
 - cool landing hero
-- translucent header 
+- translucent tinted header 
 - responsive web design
 - an epic javascript object for personal details
 - carousel powered by shadcn/ui, populated using json files
@@ -27,3 +29,8 @@ bluepages is built using:
 3. do `npm run dev`
 4. go to [`localhost:5173`](localhost:5173)
 5. enjoy bluepages
+
+## DISCLAIMER
+Images are taken from various sources from the Internet. All copyright goes to the original image creators.
+
+Generative AI is used to populate content in the About page.

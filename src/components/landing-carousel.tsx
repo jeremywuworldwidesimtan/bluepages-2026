@@ -35,16 +35,15 @@ export default function LandingCarousel({
   subtitle,
   carouselContent,
 }: LandingCarouselProps) {
-  console.log(subtitle);
   return (
-    <div className="w-48 md:w-md lg:w-2xl xl:w-3/4 mx-auto">
+    <div className="w-64 md:w-md lg:w-2xl xl:w-3/4 mx-auto">
       <div className="flex flex-col gap-2 my-4">
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-bp-ink-950">
           {title ?? "title"}
         </h2>
         {subtitle && <p className="text-bp-ink-950">{subtitle}</p>}
       </div>
-      <Carousel>
+      <Carousel opts={{ align: "start", loop: true }}>
         <CarouselContent>
           {carouselContent
             ? carouselContent.slice(0, 5).map((item, index) => (
@@ -58,7 +57,7 @@ export default function LandingCarousel({
                         }
                         alt={item?.imageAlt ?? "greg"}
                         title={item?.imageTitle ?? "greg"}
-                        className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale-50 transition duration-200 ease-in-out hover:brightness-100 hover:grayscale-0"
+                        className="relative z-20 aspect-video w-full object-cover xl:brightness-60 xl:grayscale-50 xl:transition xl:duration-200 xl:ease-in-out xl:hover:brightness-100 xl:hover:grayscale-0"
                         onClick={() => {
                           window.location.href =
                             item?.link ?? "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
@@ -123,8 +122,8 @@ export default function LandingCarousel({
                   </CarouselItem>
                 ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="ml-4"/>
+        <CarouselNext className="mr-4"/>
       </Carousel>
     </div>
   );
