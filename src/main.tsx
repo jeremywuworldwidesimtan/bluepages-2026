@@ -9,7 +9,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/bluepages-2026/" element={<Layout />}>
           <Route index element={<App />} />
         </Route>
       </Routes>
