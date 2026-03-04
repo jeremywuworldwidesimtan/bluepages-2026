@@ -1,6 +1,17 @@
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
+const calculateAge = (birthDate: string): number => {
+  const today = new Date();
+  const birth = new Date(birthDate);
+  let age = today.getFullYear() - birth.getFullYear();
+  const monthDiff = today.getMonth() - birth.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() <= birth.getDate())) {
+    age--;
+  }
+  return age;
+};
+
 export default function LandingIntro() {
   return (
     <>
@@ -23,17 +34,20 @@ export default function LandingIntro() {
           </form>
         </div>
         <div className="bg-bp-inkwell-950 text-bp-frost-50 rounded-md p-6 text-xs lg:text-lg">
-            <div className="font-mono">
-              <p>const me = {'{'}</p>
-              <p>&nbsp;&nbsp;“name”: “emily”, </p>
-              <p>&nbsp;&nbsp;“nickname”: “blue”,</p>
-              <p>&nbsp;&nbsp;“fav_color”: “#0000FF”, </p>
-              <p>&nbsp;&nbsp;“age”: 23, </p>
-              <p>&nbsp;&nbsp;“job”: [“freelance dev”, “blog writer”], </p>
-              <p>&nbsp;&nbsp;“role”: [“friend”, “daughter”], </p>
-              <p>&nbsp;&nbsp;“hobby”: [“writing”, “dreaming”, “enjoying pizza”, “just having fun”] </p>
-              <p>{'}'};</p>
-            </div>
+          <div className="font-mono">
+            <p>const me = {"{"}</p>
+            <p>&nbsp;&nbsp;“name”: “emily”, </p>
+            <p>&nbsp;&nbsp;“nickname”: “blue”,</p>
+            <p>&nbsp;&nbsp;“fav_color”: “#0000FF”, </p>
+            <p>&nbsp;&nbsp;“age”: {calculateAge("2002-11-28")}, </p>
+            <p>&nbsp;&nbsp;“job”: [“freelance dev”, “blog writer”], </p>
+            <p>&nbsp;&nbsp;“role”: [“friend”, “daughter”], </p>
+            <p>
+              &nbsp;&nbsp;“hobby”: [“writing”, “dreaming”, “enjoying pizza”,
+              “just having fun”]{" "}
+            </p>
+            <p>{"}"};</p>
+          </div>
         </div>
       </div>
     </>
