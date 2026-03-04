@@ -4,8 +4,7 @@
 
 bluepages is the personal blog+portfolio page of emily, a junior freelance frontend dev, blogger, dreamer, friend, daughter and pizza connoisseur. this is her digital home, where she shares her stories and code.
 
-
-[live demo]()
+[now with live demo!]()
 
 ![bluepages screenshot](screenshot.png)
 
