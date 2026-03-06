@@ -47,7 +47,7 @@ export default function Blog() {
                     }
                     alt={blog?.imageAlt ?? "greg"}
                     title={blog?.imageTitle ?? "greg"}
-                    className="relative z-20 aspect-video w-full object-cover xl:brightness-60 xl:grayscale-50 xl:transition xl:duration-200 xl:ease-in-out xl:hover:brightness-100 xl:hover:grayscale-0"
+                    className="relative z-20 aspect-video w-full object-cover"
                     onClick={() => {
                       window.location.href =
                         blog?.link ??
