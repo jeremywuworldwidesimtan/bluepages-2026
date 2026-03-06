@@ -1,4 +1,4 @@
-export default function About() {
+export default function Projects() {
   return (
     <div className="xl:flex xl:gap-8 w-auto bg-bp-sky-500 p-4 xl:max-w-[75vw] xl:mx-auto overflow-hidden">
       <div className="flex flex-col xl:flex-3 gap-4">
@@ -6,6 +6,9 @@ export default function About() {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-bp-ink-950">
             blue's projects
           </h1>
+          <p className="text-base mt-1 md:text-xl md:mt-2">
+            all projects comes with demo and source
+          </p>
         </div>
       </div>
     </div>
