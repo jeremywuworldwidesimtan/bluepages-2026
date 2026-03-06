@@ -1,21 +1,19 @@
 # bluepages 2026
 
-## work in progress
-
 bluepages is the personal blog+portfolio page of emily, a junior freelance frontend dev, blogger, dreamer, friend, daughter and pizza connoisseur. this is her digital home, where she shares her stories and code.
 
 [now with live demo!](https://jeremywuworldwidesimtan.github.io/bluepages-2026/)
 
-**this is just a static template demo - the email signups won't work and all content on the blog and project pages are pre-populated**
+**this is just a static template demo - the email signups won't work and all content on the blog and project pages are pre-populated, the links won't work as well, sorry about that**
 
 ![bluepages screenshot](screenshot.png)
 
 ## features
-- cool landing hero
+- cool landing hero (now with animation!)
 - translucent tinted header 
 - responsive web design
 - an epic javascript object for personal details
-- carousel powered by shadcn/ui, populated using json files
+- carousel and blog/project pages powered by shadcn/ui, populated using json files
 
 ## stack
 
