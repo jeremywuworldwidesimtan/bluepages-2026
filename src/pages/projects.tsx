@@ -22,43 +22,66 @@ export default function Projects() {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {projectCarousel.contents.map((project) => (<Card>
-                  <img
-                    src={
-                      project?.imageSrc ??
-                      "https://i.ytimg.com/vi/h3DIH90jaU4/sddefault.jpg"
+          {projectCarousel.contents.map((project, index) => (
+            <Card key={index}>
+              <img
+                src={
+                  project?.imageSrc ??
+                  "https://i.ytimg.com/vi/h3DIH90jaU4/sddefault.jpg"
+                }
+                alt={project?.imageAlt ?? "greg"}
+                title={project?.imageTitle ?? "greg"}
+                className="relative z-20 aspect-video w-full object-cover transition duration-200 ease-in-out hover:scale-110"
+                onClick={() => {
+                  window.location.href =
+                    project?.link ??
+                    "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                }}
+              />
+              <CardHeader>
+                <CardTitle>{project?.title ?? "Title"}</CardTitle>
+                <CardDescription>
+                  {project?.description ?? "Description"}
+                </CardDescription>
+              </CardHeader>
+              <CardFooter className="pt-auto flex flex-col xl:flex-row xl:items-center gap-2 justify-between items-start">
+                <div>
+                  <Button
+                    onClick={() =>
+                      window.open(
+                        project?.demo ??
+                          "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                        "_blank",
+                      )
                     }
-                    alt={project?.imageAlt ?? "greg"}
-                    title={project?.imageTitle ?? "greg"}
-                    className="relative z-20 aspect-video w-full object-cover transition duration-200 ease-in-out hover:scale-110"
-                    onClick={() => {
-                      window.location.href =
+                  >
+                    Live Demo
+                  </Button>
+                  <Button
+                    variant="secondary"
+                    onClick={() =>
+                      window.open(
                         project?.link ??
-                        "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-                    }}
-                  />
-                  <CardHeader>
-                    <CardTitle>{project?.title ?? "Title"}</CardTitle>
-                    <CardDescription>
-                      {project?.description ?? "Description"}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardFooter className="pt-auto flex flex-col xl:flex-row xl:items-center gap-2 justify-between items-start">
-                    <div>
-                      <Button onClick={() => window.open(project?.demo ?? "https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank")}>Live Demo</Button>
-                      <Button variant="secondary" onClick={() => window.open(project?.link ?? "https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank")}>Source Code</Button>
-                    </div>
-                    <div className="flex flex-row justify-end gap-2">
-                      {project?.badges ? (
-                        project?.badges?.map((badge, badgeIndex) => (
-                          <Badge key={badgeIndex}>{badge}</Badge>
-                        ))
-                      ) : (
-                        <Badge key={0}>Badge</Badge>
-                      )}
-                    </div>
-                  </CardFooter>
-                </Card>))}
+                          "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                        "_blank",
+                      )
+                    }
+                  >
+                    Source Code
+                  </Button>
+                </div>
+                <div className="flex flex-row justify-end gap-2">
+                  {project?.badges ? (
+                    project?.badges?.map((badge, badgeIndex) => (
+                      <Badge key={badgeIndex}>{badge}</Badge>
+                    ))
+                  ) : (
+                    <Badge key={0}>Badge</Badge>
+                  )}
+                </div>
+              </CardFooter>
+            </Card>
+          ))}
         </div>
       </div>
     </div>

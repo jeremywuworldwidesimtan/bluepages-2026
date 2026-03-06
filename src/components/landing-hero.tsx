@@ -5,7 +5,7 @@ export default function LandingHero() {
     renderStars(100);
   }, []);
   return (
-    <div id="stars">
+    <div id="stars" className="relative">
       <div className="z-1 relative w-auto p-4 xl:max-w-[60vw] xl:mx-auto overflow-hidden">
         <picture className="pointer-events-none absolute inset-0 flex items-center justify-center">
           <img
@@ -34,7 +34,8 @@ export default function LandingHero() {
 function renderStars(starCount: number, starDivId: string = "stars") {
   const starsContainer = document.getElementById(starDivId);
   // only make it work on desktop widths
-  if (!starsContainer || window.innerWidth < 1024) return;
+  // if (!starsContainer || window.innerWidth < 1024) return;
+  if (!starsContainer) return;
   for (let i = 0; i < starCount; i++) {
     const star = document.createElement("div");
     star.classList.add("star");
