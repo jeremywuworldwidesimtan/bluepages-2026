@@ -58,6 +58,19 @@ function MobileMenu({
 }: {
   setMenuVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
+  const closeMenu = (fromX?: boolean) => {
+    const menu = document.querySelector("#mobile-menu"); // classic dom manipulation epic
+    if (menu) {
+      menu.classList.remove("fade--in");
+      if (fromX) {
+        menu.classList.add("fade--out");
+      }
+      setTimeout(() => setMenuVisible(false), fromX ? 100 : 0);
+    } else {
+      setMenuVisible(false);
+    }
+  };
+
   return (
     <div
       id="mobile-menu"
@@ -66,19 +79,29 @@ function MobileMenu({
       <div>
         <ul className="flex flex-col gap-4 md:gap-8 text-xl md:text-4xl text-bp-ink-950">
           <li>
-            <Link to="/">home</Link>
+            <Link to="/" onClick={() => closeMenu()}>
+              home
+            </Link>
           </li>
           <li>
-            <Link to="/">blog</Link>
+            <Link to="/" onClick={() => closeMenu()}>
+              blog
+            </Link>
           </li>
           <li>
-            <Link to="/">projects</Link>
+            <Link to="/" onClick={() => closeMenu()}>
+              projects
+            </Link>
           </li>
           <li>
-            <Link to="/about">about</Link>
+            <Link to="/about" onClick={() => closeMenu()}>
+              about
+            </Link>
           </li>
           <li>
-            <Link to="/">contact</Link>
+            <Link to="/" onClick={() => closeMenu()}>
+              contact
+            </Link>
           </li>
         </ul>
         <div className="flex gap-4 mt-6">
@@ -95,17 +118,7 @@ function MobileMenu({
       </div>
       <X
         size={24}
-        onClick={() => {
-          // change the fade in to a fade out and then unmount after the animation is done
-          const menu = document.querySelector("#mobile-menu"); // classic dom manipulation epic
-          if (menu) {
-            menu.classList.remove("fade--in");
-            menu.classList.add("fade--out");
-            setTimeout(() => setMenuVisible(false), 100);
-          } else {
-            setMenuVisible(false);
-          }
-        }}
+        onClick={() => closeMenu(true)}
       />
     </div>
   );
