@@ -32,7 +32,7 @@ export default function Contact() {
               below - i read every message!
             </p>
             <form
-              action="#"
+              onSubmit={(event) => event.preventDefault()}
               className="bg-bp-teal-700 rounded-md p-2 text-bp-frost-50 mt-4"
             >
               <FieldGroup>
