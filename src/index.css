@@ -124,20 +124,19 @@ nav a::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px; 
+  height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000; 
-  transform: scaleX(0); 
-  transform-origin: bottom right; 
-  transition: transform 0.1s ease-out; 
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.1s ease-out;
 }
 
 nav a:hover::after {
-  transform: scaleX(1); 
-  transform-origin: bottom left; 
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
-
 
 a:visited {
   color: inherit;
@@ -166,6 +165,86 @@ a:visited {
   }
   to {
     opacity: 0;
+  }
+}
+
+.hero-animation-top {
+  animation: hero-animation-top 0.5s;
+}
+
+.hero-animation-top-75 {
+  animation: hero-animation-top-75 0.75s;
+}
+
+.hero-animation-bottom {
+  animation: hero-animation-bottom 0.5s;
+}
+
+.hero-animation-bottom-75 {
+  animation: hero-animation-bottom-75 0.75s;
+}
+
+@keyframes hero-animation-top {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-animation-top-75 {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-animation-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-animation-bottom-75 {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.2;
+  animation: blink ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
   }
 }
 
