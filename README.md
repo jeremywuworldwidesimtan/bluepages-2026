@@ -4,7 +4,7 @@ bluepages is the personal blog+portfolio page of emily, a junior freelance front
 
 [now with live demo!](https://jeremywuworldwidesimtan.github.io/bluepages-2026/)
 
-**this is just a static template demo - the email signups won't work and all content on the blog and project pages are pre-populated, the links won't work as well, sorry about that**
+**this is just a static template demo - the email signups won't work and all content on the blog and project pages are pre-populated, blog and project links won't work, sorry about that**
 
 ![bluepages screenshot](screenshot.png)
 

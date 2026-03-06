@@ -38,13 +38,13 @@ export default function Projects() {
                     "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
                 }}
               />
-              <CardHeader>
+              <CardHeader className="mt-auto">
                 <CardTitle>{project?.title ?? "Title"}</CardTitle>
                 <CardDescription>
                   {project?.description ?? "Description"}
                 </CardDescription>
               </CardHeader>
-              <CardFooter className="pt-auto flex flex-col xl:flex-row xl:items-center gap-2 justify-between items-start">
+              <CardFooter className="mt-auto flex flex-col xl:flex-row xl:items-center gap-2 justify-between items-start">
                 <div>
                   <Button
                     onClick={() =>

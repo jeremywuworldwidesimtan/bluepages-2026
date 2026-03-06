@@ -10,7 +10,7 @@
       "badges": ["React", "Frontend"],
       "link": "/",
       "author": "Blue",
-      "publishedDate": "2026-03-01 22:28"
+      "publishedDate": "2026-03-01T22:28"
     },
     {
       "imageSrc": "https://i.ytimg.com/vi/Nu0XVEVE9S8/maxresdefault.jpg",
@@ -21,7 +21,7 @@
       "badges": ["News", "Database"],
       "link": "/",
       "author": "Blue",
-      "publishedDate": "2026-02-28 23:00"
+      "publishedDate": "2026-02-28T23:00"
     },
     {
       "imageSrc": "https://media.assettype.com/analyticsinsight/2024-09-02/mzvuu6lu/Top-10-Programming-Projects-to-Final-Year-Students.jpg",
@@ -32,7 +32,7 @@
       "badges": ["Career", "Life"],
       "link": "/",
       "author": "Blue",
-      "publishedDate": "2026-02-27 22:08"
+      "publishedDate": "2026-02-27T22:08"
     },
     {
       "imageSrc": "https://ik.imagekit.io/aoi3fgebjgr/wp-content/uploads/2018/05/pizzanet.png",
@@ -43,7 +43,7 @@
       "badges": ["Pizza", "Facts"],
       "link": "/",
       "author": "Blue",
-      "publishedDate": "2026-02-25 20:11"
+      "publishedDate": "2026-02-25T20:11"
     },
     {
       "imageSrc": "https://i.ytimg.com/vi/FlfrzfDYLF0/maxresdefault.jpg",
@@ -54,7 +54,7 @@
       "badges": ["Gaming", "Life"],
       "link": "/",
       "author": "Blue",
-      "publishedDate": "2026-02-24 23:10"
+      "publishedDate": "2026-02-24T23:10"
     },
     {
       "imageSrc": "https://www.webit.de/media-assets/f/291403/1420x800/953ec57912/img-vercel-logox2.jpg/m/1420x800",
@@ -65,7 +65,7 @@
       "badges": ["React", "Deployment", "Frontend"],
       "link": "/",
       "author": "Blue",
-      "publishedDate": "2026-02-22 21:57"
+      "publishedDate": "2026-02-22T21:57"
     },
     {
       "imageSrc": "https://i.ytimg.com/vi/bja9Y-XEnHE/hq720.jpg",
@@ -76,7 +76,7 @@
       "badges": ["Life", "Sexuality"],
       "link": "/",
       "author": "Blue",
-      "publishedDate": "2026-02-21 23:18"
+      "publishedDate": "2026-02-21T23:18"
     },
     {
       "imageSrc": "https://www.01net.com/en/app/uploads/2024/04/Fiverr-vs-Upwork.jpg",
@@ -87,7 +87,7 @@
       "badges": ["Life", "Career"],
       "link": "/",
       "author": "Blue",
-      "publishedDate": "2026-02-20 22:30"
+      "publishedDate": "2026-02-20T22:30"
     }
   ]
 }
