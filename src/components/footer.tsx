@@ -3,6 +3,7 @@ import {
   SiInstagram,
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
+import { Link } from "react-router";
 
 export default function Footer() {
   return (
@@ -13,17 +14,17 @@ export default function Footer() {
           <p>Made with 💙 by Alan & Emily.</p>
         </div>
         <div className="flex gap-4 items-center">
-          <a href="">Terms</a>
-          <a href="">Privacy</a>
-          <a href="">
+          <Link to="">Terms</Link>
+          <Link to="">Privacy</Link>
+          <Link to="https://github.com/jeremywuworldwidesimtan" target="_blank">
             <SiGithub />
-          </a>
-          <a href="">
+          </Link>
+          <Link to="https://www.youtube.com/@alantan1008" target="_blank">
             <SiYoutube />
-          </a>
-          <a href="">
+          </Link>
+          <Link to="https://www.instagram.com/fabriziorom" target="_blank">
             <SiInstagram />
-          </a>
+          </Link>
         </div>
       </div>
     </>

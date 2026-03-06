@@ -7,6 +7,7 @@ import Layout from "./pages/layout.tsx";
 import About from "./pages/about.tsx";
 import Blog from "./pages/blog.tsx";
 import Projects from "./pages/projects.tsx";
+import Contact from "./pages/contact.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blog />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </HashRouter>
