@@ -16,13 +16,13 @@ export default function Footer() {
         <div className="flex gap-4 items-center">
           <Link to="">Terms</Link>
           <Link to="">Privacy</Link>
-          <Link to="https://github.com/jeremywuworldwidesimtan" target="_blank">
+          <Link to="https://github.com/jeremywuworldwidesimtan" target="_blank" rel="noopener noreferrer">
             <SiGithub />
           </Link>
-          <Link to="https://www.youtube.com/@alantan1008" target="_blank">
+          <Link to="https://www.youtube.com/@alantan1008" target="_blank" rel="noopener noreferrer">
             <SiYoutube />
           </Link>
-          <Link to="https://www.instagram.com/fabriziorom" target="_blank">
+          <Link to="https://www.instagram.com/fabriziorom" target="_blank" rel="noopener noreferrer">
             <SiInstagram />
           </Link>
         </div>

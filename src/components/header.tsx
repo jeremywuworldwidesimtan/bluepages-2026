@@ -105,13 +105,13 @@ function MobileMenu({
           </li>
         </ul>
         <div className="flex gap-4 mt-6">
-          <Link to="https://github.com/jeremywuworldwidesimtan" target="_blank">
+          <Link to="https://github.com/jeremywuworldwidesimtan" target="_blank" rel="noopener noreferrer">
             <SiGithub />
           </Link>
-          <Link to="https://www.youtube.com/@alantan1008" target="_blank">
+          <Link to="https://www.youtube.com/@alantan1008" target="_blank" rel="noopener noreferrer">
             <SiYoutube />
           </Link>
-          <Link to="https://www.instagram.com/fabriziorom" target="_blank">
+          <Link to="https://www.instagram.com/fabriziorom" target="_blank" rel="noopener noreferrer">
             <SiInstagram />
           </Link>
         </div>
