@@ -26,10 +26,10 @@ export default function Header() {
               <Link to="/">home</Link>
             </li>
             <li>
-              <Link to="/">blog</Link>
+              <Link to="/blog">blog</Link>
             </li>
             <li>
-              <Link to="/">projects</Link>
+              <Link to="/projects">projects</Link>
             </li>
             <li>
               <Link to="/about">about</Link>
@@ -84,12 +84,12 @@ function MobileMenu({
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => closeMenu()}>
+            <Link to="/blog" onClick={() => closeMenu()}>
               blog
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => closeMenu()}>
+            <Link to="/projects" onClick={() => closeMenu()}>
               projects
             </Link>
           </li>
