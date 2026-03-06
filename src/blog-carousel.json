@@ -8,7 +8,7 @@
       "title": "Why React still matters in 2026",
       "description": "Vibe-coding doesn't eliminate the need for React developers, after all.",
       "badges": ["React", "Frontend"],
-      "link": "/",
+      "link": "",
       "author": "Blue",
       "publishedDate": "2026-03-01T22:28"
     },
@@ -19,7 +19,7 @@
       "title": "Why is Supabase banned in India?",
       "description": "What did one of the leading database platform did to get banned in a major tech nation",
       "badges": ["News", "Database"],
-      "link": "/",
+      "link": "",
       "author": "Blue",
       "publishedDate": "2026-02-28T23:00"
     },
@@ -30,7 +30,7 @@
       "title": "How to stage a comeback in the IT world",
       "description": "One or two setbacks doesn't define your IT career. Get back up and get back working!",
       "badges": ["Career", "Life"],
-      "link": "/",
+      "link": "",
       "author": "Blue",
       "publishedDate": "2026-02-27T22:08"
     },
@@ -41,7 +41,7 @@
       "title": "History of the relationship between technology and pizza",
       "description": "The fact that pizza was the first food that can be ordered online isn't the only surprising fact I learned.",
       "badges": ["Pizza", "Facts"],
-      "link": "/",
+      "link": "",
       "author": "Blue",
       "publishedDate": "2026-02-25T20:11"
     },
@@ -52,7 +52,7 @@
       "title": "Why am I playing games again",
       "description": "Sometimes, revisiting something you hate doing today is better than keep doing the things you love",
       "badges": ["Gaming", "Life"],
-      "link": "/",
+      "link": "",
       "author": "Blue",
       "publishedDate": "2026-02-24T23:10"
     },
@@ -63,7 +63,7 @@
       "title": "How to deploy web apps",
       "description": "Building projects is nothing if you didn't show it to the world.",
       "badges": ["React", "Deployment", "Frontend"],
-      "link": "/",
+      "link": "",
       "author": "Blue",
       "publishedDate": "2026-02-22T21:57"
     },
@@ -74,7 +74,7 @@
       "title": "My love story with Shannon from the Papa games",
       "description": "A little self-insert fanfic I wrote of me with a girl that I like from a childhood game.",
       "badges": ["Life", "Sexuality"],
-      "link": "/",
+      "link": null,
       "author": "Blue",
       "publishedDate": "2026-02-21T23:18"
     },
@@ -85,7 +85,7 @@
       "title": "One year of moving out and working freelance",
       "description": "Reflecting on a wonderful personal growth journey that allows me to balance career and identity.",
       "badges": ["Life", "Career"],
-      "link": "/",
+      "link": "",
       "author": "Blue",
       "publishedDate": "2026-02-20T22:30"
     }

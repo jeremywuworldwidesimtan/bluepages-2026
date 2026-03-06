@@ -10,7 +10,7 @@ type BlogCardProps = {
   title: string;
   description: string;
   badges: string[];
-  link: string;
+  link: string | null;
   author: string;
   publishedDate: string;
 };
@@ -29,7 +29,7 @@ export default function BlogCard({
 }: BlogCardProps) {
   return (
     <div className="rounded-xl bg-card p-4 text-card-foreground ring-1 ring-foreground/10" key={key}>
-      <Link to={link}>
+      <Link to={link ?? "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}>
         <div className="flex flex-row gap-4 w-full">
           {/* hide overflow properly */}
           <picture className="relative z-20 overflow-hidden rounded-lg">

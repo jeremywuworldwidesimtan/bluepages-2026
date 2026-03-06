@@ -32,3 +32,5 @@ bluepages is built using:
 Images are taken from various sources from the Internet. All copyright goes to the original image creators.
 
 Generative AI is used to populate content in the About page.
+
+### WHATEVER YOU DO, DO NOT CLICK ON THE PHOTO OF SHANNON IF YOU FIND IT!

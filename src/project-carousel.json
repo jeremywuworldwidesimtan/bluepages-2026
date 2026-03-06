@@ -9,8 +9,8 @@
       "title": "React Small Business Page",
       "description": "A simple template for a feature-complete small business page. An abridged version of a client project.",
       "badges": ["React", "Frontend", "Landing Page"],
-      "link": "/",
-      "demo": "/"
+      "link": "",
+      "demo": ""
     },
     {
       "imageSrc": "https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1632205229741%2F3Uii92UUN.png",
@@ -19,8 +19,8 @@
       "title": "React Dashbaord Project",
       "description": "A dashboard for internal tools in companies.",
       "badges": ["React", "Frontend", "Dashboard"],
-      "link": "/",
-      "demo": "/"
+      "link": "",
+      "demo": ""
     },
     {
       "imageSrc": "https://uicookies.com/wp-content/uploads/2020/01/react-website-templates-1000x750.jpg",
@@ -29,8 +29,8 @@
       "title": "React Vacation Site",
       "description": "A dynamic vacation site built with React with RESTFul API and DB integrations",
       "badges": ["React", "Frontend", "Landing Page"],
-      "link": "/",
-      "demo": "/"
+      "link": "",
+      "demo": ""
     },
     {
       "imageSrc": "https://tailkits.com/_ipx/_/react-chat-template.png",
@@ -39,8 +39,8 @@
       "title": "React WhatsApp Clone",
       "description": "Experimenting with realtime interactions.",
       "badges": ["React", "Frontend", "Experiments"],
-      "link": "/",
-      "demo": "/"
+      "link": "",
+      "demo": ""
 
     }
   ]

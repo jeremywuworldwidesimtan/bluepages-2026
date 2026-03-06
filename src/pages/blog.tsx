@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { renderDate } from "@/utils/daterender";
+import { Link } from "react-router";
 
 export default function Blog() {
   return (
@@ -41,20 +42,17 @@ export default function Blog() {
               </div>
               <div className="md:hidden">
                 <Card key={index}>
-                  <img
-                    src={
-                      blog?.imageSrc ??
-                      "https://i.ytimg.com/vi/h3DIH90jaU4/sddefault.jpg"
-                    }
-                    alt={blog?.imageAlt ?? "greg"}
-                    title={blog?.imageTitle ?? "greg"}
-                    className="relative z-20 aspect-video w-full object-cover"
-                    onClick={() => {
-                      window.location.href =
-                        blog?.link ??
-                        "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-                    }}
-                  />
+                  <Link to ={(blog?.link ?? "https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>
+                    <img
+                      src={
+                        blog?.imageSrc ??
+                        "https://i.ytimg.com/vi/h3DIH90jaU4/sddefault.jpg"
+                      }
+                      alt={blog?.imageAlt ?? "greg"}
+                      title={blog?.imageTitle ?? "greg"}
+                      className="relative z-20 aspect-video w-full object-cover"
+                    />
+                  </Link>
                   <CardHeader>
                     <CardTitle>{blog?.title ?? "Title"}</CardTitle>
                     <CardDescription>
