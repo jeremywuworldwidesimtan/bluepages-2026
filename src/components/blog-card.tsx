@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import { Badge } from "./ui/badge";
 
 type BlogCardProps = {
+  key: string | number;
   imageSrc: string;
   imageAlt: string;
   imageTitle: string;
@@ -15,6 +16,7 @@ type BlogCardProps = {
 };
 
 export default function BlogCard({
+  key,
   imageSrc,
   imageAlt,
   imageTitle,
@@ -26,7 +28,7 @@ export default function BlogCard({
   publishedDate,
 }: BlogCardProps) {
   return (
-    <div className="rounded-xl bg-card p-4 text-card-foreground ring-1 ring-foreground/10">
+    <div className="rounded-xl bg-card p-4 text-card-foreground ring-1 ring-foreground/10" key={key}>
       <Link to={link}>
         <div className="flex flex-row gap-4 w-full">
           {/* hide overflow properly */}

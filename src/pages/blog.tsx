@@ -23,10 +23,11 @@ export default function Blog() {
           </p>
         </div>
         <div className="flex flex-col gap-4">
-          {blogCarousel.contents.map((blog) => (
+          {blogCarousel.contents.map((blog, index) => (
             <>
               <div className="hidden md:block">
                 <BlogCard
+                  key={index}
                   imageSrc={blog.imageSrc}
                   imageAlt={blog.imageAlt}
                   imageTitle={blog.imageTitle}
@@ -39,7 +40,7 @@ export default function Blog() {
                 />
               </div>
               <div className="md:hidden">
-                <Card>
+                <Card key={index}>
                   <img
                     src={
                       blog?.imageSrc ??
