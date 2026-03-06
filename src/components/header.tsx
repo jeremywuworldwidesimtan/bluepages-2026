@@ -26,16 +26,16 @@ export default function Header() {
               <Link to="/">home</Link>
             </li>
             <li>
-              <Link to="/">blog</Link>
+              <Link to="/blog">blog</Link>
             </li>
             <li>
-              <Link to="/">projects</Link>
+              <Link to="/projects">projects</Link>
             </li>
             <li>
               <Link to="/about">about</Link>
             </li>
             <li>
-              <Link to="/">contact</Link>
+              <Link to="/contact">contact</Link>
             </li>
           </ul>
         </nav>
@@ -84,12 +84,12 @@ function MobileMenu({
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => closeMenu()}>
+            <Link to="/blog" onClick={() => closeMenu()}>
               blog
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => closeMenu()}>
+            <Link to="/projects" onClick={() => closeMenu()}>
               projects
             </Link>
           </li>
@@ -99,21 +99,21 @@ function MobileMenu({
             </Link>
           </li>
           <li>
-            <Link to="/" onClick={() => closeMenu()}>
+            <Link to="/contact" onClick={() => closeMenu()}>
               contact
             </Link>
           </li>
         </ul>
         <div className="flex gap-4 mt-6">
-          <a href="">
+          <Link to="https://github.com/jeremywuworldwidesimtan" target="_blank" rel="noopener noreferrer">
             <SiGithub />
-          </a>
-          <a href="">
+          </Link>
+          <Link to="https://www.youtube.com/@alantan1008" target="_blank" rel="noopener noreferrer">
             <SiYoutube />
-          </a>
-          <a href="">
+          </Link>
+          <Link to="https://www.instagram.com/fabriziorom" target="_blank" rel="noopener noreferrer">
             <SiInstagram />
-          </a>
+          </Link>
         </div>
       </div>
       <X

@@ -20,12 +20,11 @@ function parseCarouselData(data: CarouselData): LandingCarouselProps {
 
 export default function Landing() {
   return (
-    <>
+    <div>
       <LandingHero />
       <LandingIntro />
       <LandingCarousel {...parseCarouselData({title: blogCarousel.title, carouselContent: blogCarousel.contents})} />
       <LandingCarousel {...parseCarouselData({title: projectCarousel.title, subtitle: projectCarousel.subtitle, carouselContent: projectCarousel.contents})} />
-      {/* <ComponentExample /> */}
-    </>
+    </div>
   );
 }

@@ -140,7 +140,6 @@ export default function About() {
                 <Field className="w-full max-w-sm" key={skill.name}>
                   <FieldLabel htmlFor={skill.id}>
                     <span>{skill.name}</span>
-                    <span className="ml-auto">{skill.value}/100</span>
                   </FieldLabel>
                   <Progress
                     value={skill.value}
