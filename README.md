@@ -9,7 +9,8 @@ bluepages is the personal blog+portfolio page of emily, a junior freelance front
 ![bluepages screenshot](screenshot.png)
 
 ## features
-- cool landing hero (now with animation!)
+- cool landing hero (now with animation and stars!)
+- 
 - translucent tinted header 
 - responsive web design
 - an epic javascript object for personal details
