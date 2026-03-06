@@ -21,7 +21,7 @@ export type CarouselItemData = {
   title: string;
   description: string;
   badges: string[];
-  link: string;
+  link: string | null;
 };
 
 export type LandingCarouselProps = {
