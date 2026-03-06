@@ -234,6 +234,8 @@ a:visited {
   background: white;
   opacity: 0.2;
   animation: blink ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
 }
 
 @keyframes blink {
